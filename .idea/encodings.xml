@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-admin/zk-admin-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-admin/zk-admin-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-admin/zk-admin-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-admin/zk-admin-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-core/zk-framework-core-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-core/zk-framework-core-datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-core/zk-framework-core-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-core/zk-framework-core-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-core/zk-framework-core-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-framework/zk-framework-web/src/main/java" charset="UTF-8" />
+  </component>
+</project>

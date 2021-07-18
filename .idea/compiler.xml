@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zk-admin-api" />
+        <module name="zk-admin-service" />
+        <module name="zk-framework-core-cache" />
+        <module name="zk-framework-core-mybatis" />
+        <module name="zk-framework-core-log" />
+        <module name="zk-framework-core-redis" />
+        <module name="zk-framework-service" />
+        <module name="zk-framework-core-datasource" />
+        <module name="zk-framework-dao" />
+        <module name="zk-admin-base" />
+        <module name="zk-framework-model" />
+        <module name="zk-framework-web" />
+        <module name="zk-admin-web" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="zk-admin-api" options="-parameters" />
+      <module name="zk-admin-base" options="-parameters" />
+      <module name="zk-admin-service" options="-parameters" />
+      <module name="zk-admin-web" options="-parameters" />
+      <module name="zk-framework-core-cache" options="-parameters" />
+      <module name="zk-framework-core-datasource" options="-parameters" />
+      <module name="zk-framework-core-log" options="-parameters" />
+      <module name="zk-framework-core-mybatis" options="-parameters" />
+      <module name="zk-framework-core-redis" options="-parameters" />
+      <module name="zk-framework-dao" options="-parameters" />
+      <module name="zk-framework-model" options="-parameters" />
+      <module name="zk-framework-service" options="-parameters" />
+      <module name="zk-framework-web" options="-parameters" />
+    </option>
+  </component>
+</project>
