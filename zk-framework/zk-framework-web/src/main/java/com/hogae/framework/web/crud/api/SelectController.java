@@ -22,8 +22,8 @@ public interface SelectController<K extends Serializable,VO extends BaseModelVO>
 
     @Operation(summary = "单条查询",description = "id查询")
     @GetMapping(value = "/query/{id}")
-    default AppResponse selectModel(@Parameter(name = "id",description = "主键值",example = "1") @PathVariable @NotNull K id) {
-        return AppResponse.success(getService().selectModel(id));
+    default AppResponse selectModelById(@Parameter(name = "id",description = "主键值",example = "1") @PathVariable @NotNull K id) {
+        return AppResponse.success(getService().selectModelById(id));
     }
 
     @Operation(summary = "多条查询",description = "id查询")

@@ -1,6 +1,4 @@
 package com.hogae.framework.dao;
 
-public interface TreeMapper {
-
-
+public interface IMapper {
 }

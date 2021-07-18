@@ -1,10 +1,10 @@
 package com.hogae.framework.dao.crud.api;
 
 
-import com.hogae.framework.dao.crud.IMapper;
+import com.hogae.framework.dao.IMapper;
 
 public interface InsertMapper extends IMapper {
 
-    <M> int insert(M model);
+    <M> M insert(M model);
 
 }

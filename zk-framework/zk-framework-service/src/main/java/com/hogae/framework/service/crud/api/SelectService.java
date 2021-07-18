@@ -6,8 +6,8 @@ import java.util.Collection;
 
 public interface SelectService extends IService {
 
-    default <DTO,K> DTO selectModel(K id){
-        return getMapper().selectModel(id);
+    default <DTO,K> DTO selectModelById(K id){
+        return getMapper().selectModelById(id);
     }
 
     default <DTO,K> Collection<DTO> selectModelsByIds(Collection<K> ids){

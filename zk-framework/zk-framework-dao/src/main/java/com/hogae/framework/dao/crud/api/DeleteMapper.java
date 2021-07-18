@@ -1,6 +1,6 @@
 package com.hogae.framework.dao.crud.api;
 
-import com.hogae.framework.dao.crud.IMapper;
+import com.hogae.framework.dao.IMapper;
 
 import java.util.Collection;
 
