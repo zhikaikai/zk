@@ -1,11 +1,12 @@
 package com.hogae.framework.service.crud.api;
 
 
-import com.hogae.framework.service.crud.IService;
+import com.hogae.framework.dao.crud.CrudMapper;
+import com.hogae.framework.service.base.IService;
 
-public interface InsertService extends IService {
+public interface InsertService extends IService<CrudMapper>  {
 
-    default <DTO> DTO insert(DTO modelDTO){
+    default <DTO> int insert(DTO modelDTO){
         return getMapper().insert(modelDTO);
     }
 

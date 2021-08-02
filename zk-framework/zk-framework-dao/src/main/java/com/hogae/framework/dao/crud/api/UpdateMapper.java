@@ -1,19 +1,19 @@
 package com.hogae.framework.dao.crud.api;
 
 
-import com.hogae.framework.dao.IMapper;
+import com.hogae.framework.dao.base.IMapper;
 
 import java.util.Collection;
 
 public interface UpdateMapper extends IMapper {
 
-    <M> int update(M model);
+    <MODEL> int update(MODEL model);
 
-    <K> int enableById(K id);
+    <ID> int enableById(ID id);
 
-    <K> int disableById(K id);
+    <ID> int disableById(ID id);
 
-    <K> int enableByIds(Collection<K> ids);
+    <ID> int enableByIds(Collection<ID> ids);
 
-    <K> int disableByIds(Collection<K> ids);
+    <ID> int disableByIds(Collection<ID> ids);
 }

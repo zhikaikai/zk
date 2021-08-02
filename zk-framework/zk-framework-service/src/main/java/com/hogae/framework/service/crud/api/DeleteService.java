@@ -1,16 +1,17 @@
 package com.hogae.framework.service.crud.api;
 
-import com.hogae.framework.service.crud.IService;
+import com.hogae.framework.dao.crud.CrudMapper;
+import com.hogae.framework.service.base.IService;
 
 import java.util.Collection;
 
-public interface DeleteService extends IService {
+public interface DeleteService extends IService<CrudMapper>  {
 
-    default <K> int deleteById(K id){
+    default <ID> int deleteById(ID id){
         return getMapper().deleteById(id);
     }
 
-    default <K> int deleteByIds(Collection<K> ids){
+    default <ID> int deleteByIds(Collection<ID> ids){
         return getMapper().deleteByIds(ids);
     }
 

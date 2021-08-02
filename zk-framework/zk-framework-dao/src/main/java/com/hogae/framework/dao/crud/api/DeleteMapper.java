@@ -1,13 +1,13 @@
 package com.hogae.framework.dao.crud.api;
 
-import com.hogae.framework.dao.IMapper;
+import com.hogae.framework.dao.base.IMapper;
 
 import java.util.Collection;
 
 public interface DeleteMapper extends IMapper {
 
-    <K> int deleteById(K id);
+    <ID> int deleteById(ID id);
 
-    <K> int deleteByIds(Collection<K> ids);
+    <ID> int deleteByIds(Collection<ID> ids);
 
 }

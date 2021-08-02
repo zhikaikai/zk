@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 @Data
-public class Page {
+public class Page extends IModel{
     private final static String ASC = " ASC ";
     /**
      * 当前记录起始索引
@@ -18,7 +18,7 @@ public class Page {
     /**
      * 每页显示记录数
      */
-    @Min(value = 0,message = "pageSize 不能小于0",groups = ValidatorGroup.paging.class)
+    @Min(value = 10,message = "pageSize 不能小于0",groups = ValidatorGroup.paging.class)
     private Integer pageSize;
 
     /**

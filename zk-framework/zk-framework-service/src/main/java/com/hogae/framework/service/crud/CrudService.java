@@ -5,6 +5,6 @@ import com.hogae.framework.service.crud.api.InsertService;
 import com.hogae.framework.service.crud.api.SelectService;
 import com.hogae.framework.service.crud.api.UpdateService;
 
-public interface BaseService extends SelectService, InsertService, UpdateService, DeleteService {
+public interface CrudService extends SelectService, InsertService, UpdateService, DeleteService {
 
 }

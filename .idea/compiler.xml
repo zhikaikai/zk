@@ -7,19 +7,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="zk-framework-dao" />
         <module name="zk-admin-api" />
-        <module name="zk-admin-service" />
         <module name="zk-framework-core-cache" />
+        <module name="zk-admin-base" />
         <module name="zk-framework-core-mybatis" />
+        <module name="zk-framework-model" />
         <module name="zk-framework-core-log" />
         <module name="zk-framework-core-redis" />
         <module name="zk-framework-service" />
-        <module name="zk-framework-core-datasource" />
-        <module name="zk-framework-dao" />
-        <module name="zk-admin-base" />
-        <module name="zk-framework-model" />
         <module name="zk-framework-web" />
         <module name="zk-admin-web" />
+        <module name="zk-framework-core-datasource" />
+      </profile>
+      <profile name="Annotation profile for zk" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="D:/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="zk-admin-service" />
       </profile>
     </annotationProcessing>
   </component>

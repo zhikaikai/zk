@@ -1,19 +1,19 @@
 package com.hogae.framework.dao.crud.api;
 
-import com.hogae.framework.dao.IMapper;
+import com.hogae.framework.dao.base.IMapper;
 
 import java.util.Collection;
 
 public interface SelectMapper extends IMapper {
 
-    <M,K> M selectModelById(K id);
+    <MODEL,ID> MODEL selectModelById(ID id);
 
-    <M,K> Collection<M> selectModelsByIds(Collection<K> ids);
+    <MODEL,ID> Collection<MODEL> selectModelsByIds(Collection<ID> ids);
 
-    <M> Collection<M> selectModels(M model);
+    <MODEL> Collection<MODEL> selectModels(MODEL model);
 
-    <M> Collection<M> selectPaging(M model);
+    <MODEL> Collection<MODEL> selectPaging(MODEL model,int pageNum,int pageSize);
 
-    <M> long selectCount(M model);
+    <MODEL> long selectCount(MODEL model);
 
 }

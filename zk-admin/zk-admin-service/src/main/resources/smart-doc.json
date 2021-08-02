@@ -1,0 +1,7 @@
+{
+  "outPath": "D://md2",
+  "sourceCodePaths": [{
+    "path": "src/main/java",
+    "desc": "测试"
+  }]
+}

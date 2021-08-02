@@ -1,16 +1,18 @@
 package com.hogae.framework.service.crud.api;
 
-import com.hogae.framework.service.crud.IService;
+import com.hogae.framework.dao.crud.CrudMapper;
+import com.hogae.framework.model.Page;
+import com.hogae.framework.service.base.IService;
 
 import java.util.Collection;
 
-public interface SelectService extends IService {
+public interface SelectService extends IService<CrudMapper>  {
 
-    default <DTO,K> DTO selectModelById(K id){
+    default <DTO,ID> DTO selectModelById(ID id){
         return getMapper().selectModelById(id);
     }
 
-    default <DTO,K> Collection<DTO> selectModelsByIds(Collection<K> ids){
+    default <DTO,ID> Collection<DTO> selectModelsByIds(Collection<ID> ids){
         return getMapper().selectModelsByIds(ids);
     }
 
@@ -18,8 +20,8 @@ public interface SelectService extends IService {
         return getMapper().selectModels(modelDTO);
     }
 
-    default <DTO> Collection<DTO> selectPaging(DTO modelDTO){
-        return getMapper().selectPaging(modelDTO);
+    default <DTO> Collection<DTO> selectPaging(DTO modelDTO, Page page){
+        return getMapper().selectPaging(modelDTO,page.getPageNum(),page.getPageSize());
     }
 
     default <DTO> long selectCount(DTO modelDTO){
